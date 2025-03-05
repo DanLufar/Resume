@@ -1,0 +1,163 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили для body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: radial-gradient(circle, #dcdcdc 10%, transparent 10%), 
+                      radial-gradient(circle, #dcdcdc 10%, transparent 10%);
+    background-position: 0 0, 50% 50%;
+    background-size: 30px 30px;
+    line-height: 1.6;
+}
+
+/* Контейнер */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для header */
+header {
+    margin-bottom: 40px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-info h1 {
+    font-size: 2.5em;
+    color: #5f2a8f;
+}
+
+.header-info p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Основной контент */
+.main-content section {
+    margin-bottom: 30px;
+}
+
+/* Заголовки секций */
+h2 {
+    font-size: 1.8em;
+    color: #5f2a8f;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #5f2a8f;
+    padding-bottom: 5px;
+}
+
+/* Стили для текста */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Стили для списков */
+ul {
+    list-style: disc inside;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+/* Стили для ссылок */
+a {
+    color: #5f2a8f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Кнопка загрузки */
+.download-link {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #5f2a8f;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.download-link:hover {
+    background-color: #7a3aa8;
+}
+
+/* Контактная информация */
+.contact-info li,
+.certificates li {
+    margin: 10px 0;
+}
+
+.contact-info a,
+.certificates a {
+    color: #5f2a8f;
+}
+
+.contact-info a:hover,
+.certificates a:hover {
+    text-decoration: underline;
+}
+
+/* Секция для GitHub */
+.github-link {
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.github-link a {
+    color: #5f2a8f;
+    font-size: 1.1em;
+}
+
+.github-link a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .download-link {
+        width: 100%;
+    }
+}
